@@ -123,19 +123,46 @@ iframe {
 .small {
   background: transparent url(../img/ipod-touch.png) top left no-repeat;
   background-size: 100%;
-  width: 563px;
-  height: 882px;
-  margin: 0 auto;
+  width: 200px;
+  height: 313px;
+  position: absolute;
+  top: 5em;
+  left: 20%;
 }
 
 .small iframe {
   position: relative;
-  top: 103px;
-  width: 445px;
-  height: 620px;
+  top: 36px;
+  width: 156px;
+  height: 219px;
+/*  -webkit-transform: scale(0.3);
+  -o-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  transform: scale(0.3);
+  -webkit-transform-origin: top left;
+  -o-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -moz-transform-origin: top left;
+  transform-origin: top left;*/
 }
 
+.medium {
+  background: transparent url(../img/desktop.png) top left no-repeat;
+  background-size: 100%;
+  width: 500px;
+  height: 463px;
+  position: absolute;
+  top: 2em;
+  right: 5%;
+}
 
+.medium iframe {
+  position: relative;
+  top: 36px;
+  width: 409px;
+  height: 274px;
+}
 
 
 
