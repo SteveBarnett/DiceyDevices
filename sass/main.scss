@@ -106,7 +106,14 @@ $darker-orange: #75370d;
 
 $blue: #126b8e;
 $dark-blue: #04161d;
+
 */
+
+$grey: #333;
+
+$device-width: 30;
+$icon-font-size: 40;
+
 
 body {
     /*text-align: center;*/
@@ -128,60 +135,49 @@ iframe {
 
 .icon {
   line-height: 0;
+  font-size: #{$icon-font-size}em;
+}
+
+.device {
+  float: left;
+  width: #{$device-width}em;
+  position: relative;
 }
 
 .slideshow {
-  padding-top: 6em;
-  position: absolute;
-  top: 10em;
-  right: 5%;
-  width: 40em;
+  padding-top: 5%;
   height: 35em;
   overflow: hidden;
 }
 
-.icon-slideshow {
-  font-size: 70em;
-  color: #999;
-}
-
 .slideshow iframe {
-  position: relative;
-/*
-  with font-size: 70em;
-  width: 31em;
-  height: 19em;
-  aspect ratio: 1,631578947
-*/
+  position: absolute;
+  top: 7%;
+  left: #{0.07 * $icon-font-size}em;
 
-  width: 100em;
-  height: 61.290322594em;
+  $slideshow-original-width: 0.425; // * $icon-font-size;
+  $slideshow-original-height: 0.255; // * $icon-font-size;
+  $slideshow-aspect-ratio: $slideshow-original-width / $slideshow-original-height;
+  $slideshow-width: 100;
+
+  width: #{$slideshow-width}em;
+  height: #{$slideshow-width/$slideshow-aspect-ratio}em;
+
+
   /* actual / projected = 31 / 100 = 0.31 */
-  -webkit-transform: scale(0.31);
-  -o-transform: scale(0.31);
-  -ms-transform: scale(0.31);
-  -moz-transform: scale(0.31);
-  transform: scale(0.31);
+  $slideshow-scale: $slideshow-original-width * $icon-font-size / $slideshow-width;
 
-  /* now position it */
-  top: -34em;
-  left: 4em;
+  -webkit-transform: scale($slideshow-scale);
+  -o-transform: scale($slideshow-scale);
+  -ms-transform: scale($slideshow-scale);
+  -moz-transform: scale($slideshow-scale);
+  transform: scale($slideshow-scale);
 }
 
 
 .cell {
-  /*padding-top: 6em;*/
-  position: absolute;
-  top: 20em;
-  left: 5%;
-  width: 40em;
   height: 35em;
   overflow: hidden;
-}
-
-.icon-cell {
-  font-size: 10em;
-  color: #333;
 }
 
 .cell iframe {
@@ -209,18 +205,10 @@ iframe {
 
 .ipad-mini {
   padding-top: 2em;
-  position: absolute;
-  top: 10em;
-  left: 20%%;
-  width: 9em;
   height: 10em;
   overflow: hidden;
 }
 
-.icon-ipad-mini {
-  font-size: 20em;
-  color: #666;
-}
 
 .ipad-mini iframe {
   position: relative;
