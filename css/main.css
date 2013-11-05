@@ -109,7 +109,7 @@ $dark-blue: #04161d;
 */
 
 body {
-    text-align: center;
+    /*text-align: center;*/
     padding: 2em;
 }
 
@@ -130,53 +130,123 @@ iframe {
   line-height: 0;
 }
 
-.icon-cell {
-  font-size: 300px;
-}
-
-.tiny {
+.slideshow {
+  padding-top: 6em;
   position: absolute;
-  top: 2em;
+  top: 10em;
+  right: 5%;
+  width: 40em;
+  height: 35em;
+  overflow: hidden;
 }
 
-.tiny1 {
-  left: 5%;
+.icon-slideshow {
+  font-size: 70em;
+  color: #999;
 }
 
-.tiny2 {
-  left: 25%;
-  -webkit-transform: scaleX(0.8);
-  -o-transform: scaleX(0.8);
-  -ms-transform: scaleX(0.8);
-  -moz-transform: scaleX(0.8);
-  transform: scaleX(0.8);
-}
-
-.tiny3 {
-  left: 50%;
-  -webkit-transform: scale(1.2,0.9);
-  -o-transform: scale(1.2,0.9);
-  -ms-transform: scale(1.2,0.9);
-  -moz-transform: scale(1.2,0.9);
-  transform: scale(1.2,0.9);
-}
-
-.tiny iframe {
+.slideshow iframe {
   position: relative;
-  top: 110px;
-  left: -79px;
-  width: 240px;
-  height: 240px;
-  -webkit-transform: scale(0.25);
-  -o-transform: scale(0.25);
-  -ms-transform: scale(0.25);
-  -moz-transform: scale(0.25);
-  transform: scale(0.25);
+/*
+  with font-size: 70em;
+  width: 31em;
+  height: 19em;
+  aspect ratio: 1,631578947
+*/
+
+  width: 100em;
+  height: 61.290322594em;
+  /* actual / projected = 31 / 100 = 0.31 */
+  -webkit-transform: scale(0.31);
+  -o-transform: scale(0.31);
+  -ms-transform: scale(0.31);
+  -moz-transform: scale(0.31);
+  transform: scale(0.31);
+
+  /* now position it */
+  top: -34em;
+  left: 4em;
 }
 
-[class*=" icon-"] {
+
+.cell {
+  /*padding-top: 6em;*/
+  position: absolute;
+  top: 20em;
+  left: 5%;
+  width: 40em;
+  height: 35em;
+  overflow: hidden;
+}
+
+.icon-cell {
+  font-size: 10em;
   color: #333;
 }
+
+.cell iframe {
+  position: relative;
+/*
+  with font-size: 10em;
+  width: 2em;
+  height: 2em;
+  aspect ratio: 1
+*/
+
+  width: 15em;
+  height: 15em;
+  /* actual / projected = 2 / 15 = 0.133333333 */
+  -webkit-transform: scale(0.133333333);
+  -o-transform: scale(0.133333333);
+  -ms-transform: scale(0.133333333);
+  -moz-transform: scale(0.133333333);
+  transform: scale(0.133333333);
+
+  /* now position it */
+  top: 10.7em;
+  left: -2.8em;
+}
+
+.ipad-mini {
+  padding-top: 2em;
+  position: absolute;
+  top: 10em;
+  left: 20%%;
+  width: 9em;
+  height: 10em;
+  overflow: hidden;
+}
+
+.icon-ipad-mini {
+  font-size: 20em;
+  color: #666;
+}
+
+.ipad-mini iframe {
+  position: relative;
+/*
+  with font-size: 20em;
+  width: 7em;
+  height: 9em;
+  aspect ratio: 0.777777778
+*/
+
+  width: 48em;
+  height: 64em;
+  /* actual / projected = 7 / 48 =  */
+  -webkit-transform: scale(0.145833333);
+  -o-transform: scale(0.145833333);
+  -ms-transform: scale(0.145833333);
+  -moz-transform: scale(0.145833333);
+  transform: scale(0.145833333);
+
+  /* now position it */
+  top: -11.3em;
+  left: 0.7em;
+}
+
+
+
 
 /*
  * Shifticons (shifticons.com)
