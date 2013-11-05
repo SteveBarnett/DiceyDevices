@@ -118,30 +118,7 @@ iframe {
   padding: 0;
   background-color: #fff;
   border: solid 1px #333;
-}
 
-.small {
-  background: transparent url(../img/ipod-touch.png) top left no-repeat;
-  background-size: 100%;
-  width: 200px;
-  height: 313px;
-  position: absolute;
-  top: 5em;
-  left: 5%;
-}
-
-.small iframe {
-  position: relative;
-  top: 36px;
-  left: 20px;
-  width: 320px;
-  height: 449px;
-  /*320 / 156 = 0.4875*/
-  -webkit-transform: scale(0.5);
-  -o-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  -moz-transform: scale(0.5);
-  transform: scale(0.5);
   -webkit-transform-origin: top left;
   -o-transform-origin: top left;
   -ms-transform-origin: top left;
@@ -149,40 +126,82 @@ iframe {
   transform-origin: top left;
 }
 
-.medium {
-  background: transparent url(../img/desktop.png) top left no-repeat;
-  background-size: 100%;
-  width: 500px;
-  height: 463px;
-  position: absolute;
-  top: 2em;
-  right: 15%;
-  overflow: hidden;
+.icon {
+  line-height: 0;
 }
 
-.medium iframe {
+.icon-cell {
+  font-size: 300px;
+}
+
+.tiny iframe {
   position: relative;
-  top: 59px;
-  left: 45px;
-  width: 960px;
-  height: 586px;
-  /* 412 / 960 = 0.43 */
-  -webkit-transform: scale(0.43);
-  -o-transform: scale(0.43);
-  -ms-transform: scale(0.43);
-  -moz-transform: scale(0.43);
-  transform: scale(0.43);
-  -webkit-transform-origin: top left;
-  -o-transform-origin: top left;
-  -ms-transform-origin: top left;
-  -moz-transform-origin: top left;
-  transform-origin: top left;
+  top: 110px;
+  left: -79px;
+  width: 240px;
+  height: 240px;
+  -webkit-transform: scale(0.25);
+  -o-transform: scale(0.25);
+  -ms-transform: scale(0.25);
+  -moz-transform: scale(0.25);
+  transform: scale(0.25);
 }
 
+[class*=" icon-"] {
+  color: #333;
+}
+
+/*
+ * Shifticons (shifticons.com)
+ * Order #1812
+*/
+
+@font-face {
+  font-family: "Shifticons";
+  src: url("../fonts/shifticons.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/shifticons.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/shifticons.woff") format("woff"), /* Modern Browsers */
+       url("../fonts/shifticons.ttf")  format("truetype"), /* Safari, Android, iOS */
+       url("../fonts/shifticons.svg#Shifticons") format("svg"); /* Legacy iOS */
+}
+
+/* Shifticon styles */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: Shifticons;
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: inherit;
+  /*padding-right: .25em;*/
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Order-specific styles */
+.icon-cell:before { content: ""; }
+.icon-desktop:before { content: ""; }
+.icon-ipod:before { content: ""; }
+.icon-iphone:before { content: ""; }
+.icon-ipad-mini:before { content: ""; }
+.icon-ipad:before { content: ""; }
+.icon-laptop:before { content: ""; }
+.icon-slideshow:before { content: ""; }
+.icon-calendar-planner:before { content: ""; }
+.icon-compose:before { content: ""; }
+.icon-notebook-open:before { content: ""; }
+.icon-windows:before { content: ""; }
+.icon-computer:before { content: ""; }
+.icon-blackberry:before { content: ""; }
+.icon-handheldgames:before { content: ""; }
+.icon-imac:before { content: ""; }
+.icon-ipod-touch:before { content: ""; }
+.icon-ipad-2:before { content: ""; }
+.icon-tv:before { content: ""; }
+.icon-dice:before { content: ""; }
 
 
-
-
+/* IE8 hack */
+@media \0screen\,screen\9 { body:hover{} }
 
 
 
