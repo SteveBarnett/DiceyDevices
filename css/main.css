@@ -127,24 +127,26 @@ iframe {
   height: 313px;
   position: absolute;
   top: 5em;
-  left: 20%;
+  left: 5%;
 }
 
 .small iframe {
   position: relative;
   top: 36px;
-  width: 156px;
-  height: 219px;
-/*  -webkit-transform: scale(0.3);
-  -o-transform: scale(0.3);
-  -ms-transform: scale(0.3);
-  -moz-transform: scale(0.3);
-  transform: scale(0.3);
+  left: 20px;
+  width: 320px;
+  height: 449px;
+  /*320 / 156 = 0.4875*/
+  -webkit-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  transform: scale(0.5);
   -webkit-transform-origin: top left;
   -o-transform-origin: top left;
   -ms-transform-origin: top left;
   -moz-transform-origin: top left;
-  transform-origin: top left;*/
+  transform-origin: top left;
 }
 
 .medium {
@@ -154,14 +156,27 @@ iframe {
   height: 463px;
   position: absolute;
   top: 2em;
-  right: 5%;
+  right: 15%;
+  overflow: hidden;
 }
 
 .medium iframe {
   position: relative;
-  top: 36px;
-  width: 409px;
-  height: 274px;
+  top: 59px;
+  left: 45px;
+  width: 960px;
+  height: 586px;
+  /* 412 / 960 = 0.43 */
+  -webkit-transform: scale(0.43);
+  -o-transform: scale(0.43);
+  -ms-transform: scale(0.43);
+  -moz-transform: scale(0.43);
+  transform: scale(0.43);
+  -webkit-transform-origin: top left;
+  -o-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -moz-transform-origin: top left;
+  transform-origin: top left;
 }
 
 
