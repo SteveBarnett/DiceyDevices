@@ -1,0 +1,21 @@
+/* Order-specific styles */
+.icon-cell:before { content: ""; }
+.icon-desktop:before { content: ""; }
+.icon-ipod:before { content: ""; }
+.icon-iphone:before { content: ""; }
+.icon-ipad-mini:before { content: ""; }
+.icon-ipad:before { content: ""; }
+.icon-laptop:before { content: ""; }
+.icon-slideshow:before { content: ""; }
+.icon-calendar-planner:before { content: ""; }
+.icon-compose:before { content: ""; }
+.icon-notebook-open:before { content: ""; }
+.icon-windows:before { content: ""; }
+.icon-computer:before { content: ""; }
+.icon-blackberry:before { content: ""; }
+.icon-handheldgames:before { content: ""; }
+.icon-imac:before { content: ""; }
+.icon-ipod-touch:before { content: ""; }
+.icon-ipad-2:before { content: ""; }
+.icon-tv:before { content: ""; }
+.icon-dice:before { content: ""; }

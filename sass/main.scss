@@ -1,83 +1,102 @@
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+
 html,
 button,
 input,
 select,
 textarea {
-  color: #222; }
+    color: #222;
+}
 
 html {
-  font-size: 1em;
-  line-height: 1.4; }
+    font-size: 1em;
+    line-height: 1.4;
+}
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
+
 ::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none; }
+    background: #b3d4fc;
+    text-shadow: none;
+}
 
 ::selection {
-  background: #b3d4fc;
-  text-shadow: none; }
+    background: #b3d4fc;
+    text-shadow: none;
+}
 
 /*
  * A better looking default horizontal rule
  */
+
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0; }
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
 
 /*
  * Remove the gap between images, videos, audio and canvas and the bottom of
  * their containers: h5bp.com/i/440
  */
+
 audio,
 canvas,
 img,
 video {
-  vertical-align: middle; }
+    vertical-align: middle;
+}
 
 /*
  * Remove default fieldset styles.
  */
+
 fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0; }
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
 
 /*
  * Allow only vertical resizing of textareas.
  */
+
 textarea {
-  resize: vertical; }
+    resize: vertical;
+}
 
 /* ==========================================================================
    Browse Happy prompt
    ========================================================================== */
+
 .browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0; }
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 /*
 Device Lab colours
 
@@ -88,23 +107,28 @@ $darker-orange: #75370d;
 $blue: #126b8e;
 $dark-blue: #04161d;
 */
+
 body {
-  /*text-align: center;*/
-  padding: 2em; }
+    /*text-align: center;*/
+    padding: 2em;
+}
 
 iframe {
   margin: 0;
   padding: 0;
   background-color: #fff;
   border: solid 1px #333;
+
   -webkit-transform-origin: top left;
   -o-transform-origin: top left;
   -ms-transform-origin: top left;
   -moz-transform-origin: top left;
-  transform-origin: top left; }
+  transform-origin: top left;
+}
 
 .icon {
-  line-height: 0; }
+  line-height: 0;
+}
 
 .slideshow {
   padding-top: 6em;
@@ -113,20 +137,23 @@ iframe {
   right: 5%;
   width: 40em;
   height: 35em;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .icon-slideshow {
   font-size: 70em;
-  color: #999; }
+  color: #999;
+}
 
 .slideshow iframe {
   position: relative;
-  /*
-    with font-size: 70em;
-    width: 31em;
-    height: 19em;
-    aspect ratio: 1,631578947
-  */
+/*
+  with font-size: 70em;
+  width: 31em;
+  height: 19em;
+  aspect ratio: 1,631578947
+*/
+
   width: 100em;
   height: 61.290322594em;
   /* actual / projected = 31 / 100 = 0.31 */
@@ -135,9 +162,12 @@ iframe {
   -ms-transform: scale(0.31);
   -moz-transform: scale(0.31);
   transform: scale(0.31);
+
   /* now position it */
   top: -34em;
-  left: 4em; }
+  left: 4em;
+}
+
 
 .cell {
   /*padding-top: 6em;*/
@@ -146,31 +176,36 @@ iframe {
   left: 5%;
   width: 40em;
   height: 35em;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .icon-cell {
   font-size: 10em;
-  color: #333; }
+  color: #333;
+}
 
 .cell iframe {
   position: relative;
-  /*
-    with font-size: 10em;
-    width: 2em;
-    height: 2em;
-    aspect ratio: 1
-  */
+/*
+  with font-size: 10em;
+  width: 2em;
+  height: 2em;
+  aspect ratio: 1
+*/
+
   width: 15em;
   height: 15em;
   /* actual / projected = 2 / 15 = 0.133333333 */
-  -webkit-transform: scale(0.13333);
-  -o-transform: scale(0.13333);
-  -ms-transform: scale(0.13333);
-  -moz-transform: scale(0.13333);
-  transform: scale(0.13333);
+  -webkit-transform: scale(0.133333333);
+  -o-transform: scale(0.133333333);
+  -ms-transform: scale(0.133333333);
+  -moz-transform: scale(0.133333333);
+  transform: scale(0.133333333);
+
   /* now position it */
   top: 10.7em;
-  left: -2.8em; }
+  left: -2.8em;
+}
 
 .ipad-mini {
   padding-top: 2em;
@@ -179,42 +214,53 @@ iframe {
   left: 20%%;
   width: 9em;
   height: 10em;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .icon-ipad-mini {
   font-size: 20em;
-  color: #666; }
+  color: #666;
+}
 
 .ipad-mini iframe {
   position: relative;
-  /*
-    with font-size: 20em;
-    width: 7em;
-    height: 9em;
-    aspect ratio: 0.777777778
-  */
+/*
+  with font-size: 20em;
+  width: 7em;
+  height: 9em;
+  aspect ratio: 0.777777778
+*/
+
   width: 48em;
   height: 64em;
   /* actual / projected = 7 / 48 =  */
-  -webkit-transform: scale(0.14583);
-  -o-transform: scale(0.14583);
-  -ms-transform: scale(0.14583);
-  -moz-transform: scale(0.14583);
-  transform: scale(0.14583);
+  -webkit-transform: scale(0.145833333);
+  -o-transform: scale(0.145833333);
+  -ms-transform: scale(0.145833333);
+  -moz-transform: scale(0.145833333);
+  transform: scale(0.145833333);
+
   /* now position it */
   top: -11.3em;
-  left: 0.7em; }
+  left: 0.7em;
+}
+
+
+
 
 /*
  * Shifticons (shifticons.com)
  * Order #1812
 */
+
 @font-face {
   font-family: "Shifticons";
-  src: url("../fonts/shifticons.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/shifticons.eot?#iefix") format("embedded-opentype"), url("../fonts/shifticons.woff") format("woff"), url("../fonts/shifticons.ttf") format("truetype"), url("../fonts/shifticons.svg#Shifticons") format("svg");
-  /* Legacy iOS */ }
+  src: url("../fonts/shifticons.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/shifticons.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/shifticons.woff") format("woff"), /* Modern Browsers */
+       url("../fonts/shifticons.ttf")  format("truetype"), /* Safari, Android, iOS */
+       url("../fonts/shifticons.svg#Shifticons") format("svg"); /* Legacy iOS */
+}
 
 /* Shifticon styles */
 [class^="icon-"]:before, [class*=" icon-"]:before {
@@ -225,66 +271,84 @@ iframe {
   vertical-align: baseline;
   text-decoration: inherit;
   /*padding-right: .25em;*/
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+}
+
 
 /* IE8 hack */
+@media \0screen\,screen\9 { body:hover{} }
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 /*
  * Image replacement
  */
+
 .ir {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-  /* IE 6/7 fallback */
-  *text-indent: -9999px; }
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
 
 .ir:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 150%; }
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
 
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
+
 .hidden {
-  display: none !important;
-  visibility: hidden; }
+    display: none !important;
+    visibility: hidden;
+}
 
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
+
 .visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px; }
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
 
 /*
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
+
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto; }
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
 
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
+
 .invisible {
-  visibility: hidden; }
+    visibility: hidden;
+}
 
 /*
  * Clearfix: contain floats
@@ -297,87 +361,111 @@ iframe {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
+
 .clearfix:before,
 .clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */ }
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
 
 .clearfix:after {
-  clear: both; }
+    clear: both;
+}
 
 /*
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
+
 .clearfix {
-  *zoom: 1; }
+    *zoom: 1;
+}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */ }
-@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */ }
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
+
 @media print {
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster: h5bp.com/s */
-    box-shadow: none !important;
-    text-shadow: none !important; }
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
 
-  a,
-  a:visited {
-    text-decoration: underline; }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
 
-  a[href]:after {
-    content: " (" attr(href) ")"; }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
 
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
 
-  /*
-   * Don't show links for images, or javascript/internal links
-   */
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: ""; }
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
 
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid; }
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
 
-  thead {
-    display: table-header-group;
-    /* h5bp.com/t */ }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
 
-  tr,
-  img {
-    page-break-inside: avoid; }
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
 
-  img {
-    max-width: 100% !important; }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
 
-  @page {
-    margin: 0.5cm; }
+    img {
+        max-width: 100% !important;
+    }
 
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3; }
+    @page {
+        margin: 0.5cm;
+    }
 
-  h2,
-  h3 {
-    page-break-after: avoid; } }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
