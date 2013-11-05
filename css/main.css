@@ -108,10 +108,32 @@ $blue: #126b8e;
 $dark-blue: #04161d;
 */
 
+body {
+    text-align: center;
+    padding: 2em;
+}
 
+iframe {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border: solid 1px #333;
+}
 
+.small {
+  background: transparent url(../img/ipod-touch.png) top left no-repeat;
+  background-size: 100%;
+  width: 563px;
+  height: 882px;
+  margin: 0 auto;
+}
 
-
+.small iframe {
+  position: relative;
+  top: 103px;
+  width: 445px;
+  height: 620px;
+}
 
 
 
