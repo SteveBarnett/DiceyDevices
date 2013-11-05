@@ -134,6 +134,33 @@ iframe {
   font-size: 300px;
 }
 
+.tiny {
+  position: absolute;
+  top: 2em;
+}
+
+.tiny1 {
+  left: 5%;
+}
+
+.tiny2 {
+  left: 25%;
+  -webkit-transform: scaleX(0.8);
+  -o-transform: scaleX(0.8);
+  -ms-transform: scaleX(0.8);
+  -moz-transform: scaleX(0.8);
+  transform: scaleX(0.8);
+}
+
+.tiny3 {
+  left: 50%;
+  -webkit-transform: scale(1.2,0.9);
+  -o-transform: scale(1.2,0.9);
+  -ms-transform: scale(1.2,0.9);
+  -moz-transform: scale(1.2,0.9);
+  transform: scale(1.2,0.9);
+}
+
 .tiny iframe {
   position: relative;
   top: 110px;
