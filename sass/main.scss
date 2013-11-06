@@ -97,23 +97,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/*
-Device Lab colours
-
-$orange: #d06218;
-$lighter-orange: #ed9961;
-$darker-orange: #75370d;
-
-$blue: #126b8e;
-$dark-blue: #04161d;
-
-*/
-
-$grey: #333;
-
-$device-width: 30;
-$icon-font-size: 40;
-
+@import "vars";
+@import "mixins";
 
 body {
     /*text-align: center;*/
@@ -135,103 +120,114 @@ iframe {
 
 .icon {
   line-height: 0;
-  font-size: #{$icon-font-size}em;
 }
 
 .device {
   float: left;
+  clear: both;
   width: #{$device-width}em;
   position: relative;
+  overflow: hidden;
+  iframe {
+    position: absolute;
+  }
 }
 
 .slideshow {
-  padding-top: 5%;
-  height: 35em;
-  overflow: hidden;
+  @include padding-and-height($slideshow-icon-font-size, 8.888888889, 2);
+  iframe {
+    @include iframe-positioning($slideshow-icon-font-size, 8, 14.285714286);
+    @include area-and-transforms(
+    $slideshow-width,
+    $slideshow-original-width,
+    $slideshow-original-height);
+  }
 }
 
-.slideshow iframe {
-  position: absolute;
-  top: 7%;
-  left: #{0.07 * $icon-font-size}em;
-
-  $slideshow-original-width: 0.425; // * $icon-font-size;
-  $slideshow-original-height: 0.255; // * $icon-font-size;
-  $slideshow-aspect-ratio: $slideshow-original-width / $slideshow-original-height;
-  $slideshow-width: 100;
-
-  width: #{$slideshow-width}em;
-  height: #{$slideshow-width/$slideshow-aspect-ratio}em;
-
-
-  /* actual / projected = 31 / 100 = 0.31 */
-  $slideshow-scale: $slideshow-original-width * $icon-font-size / $slideshow-width;
-
-  -webkit-transform: scale($slideshow-scale);
-  -o-transform: scale($slideshow-scale);
-  -ms-transform: scale($slideshow-scale);
-  -moz-transform: scale($slideshow-scale);
-  transform: scale($slideshow-scale);
+.icon-slideshow {
+  font-size: #{$slideshow-icon-font-size}em;
 }
 
 
 .cell {
-  height: 35em;
-  overflow: hidden;
+  @include padding-and-height($cell-icon-font-size, 8.888888889, 2);
+  iframe {
+    @include iframe-positioning($cell-icon-font-size, 6.153846154, 2.43902439);
+    @include area-and-transforms(
+    $cell-width,
+    $cell-original-width,
+    $cell-original-height);
+  }
 }
 
-.cell iframe {
-  position: relative;
-/*
-  with font-size: 10em;
-  width: 2em;
-  height: 2em;
-  aspect ratio: 1
-*/
-
-  width: 15em;
-  height: 15em;
-  /* actual / projected = 2 / 15 = 0.133333333 */
-  -webkit-transform: scale(0.133333333);
-  -o-transform: scale(0.133333333);
-  -ms-transform: scale(0.133333333);
-  -moz-transform: scale(0.133333333);
-  transform: scale(0.133333333);
-
-  /* now position it */
-  top: 10.7em;
-  left: -2.8em;
+.icon-cell {
+  font-size: #{$cell-icon-font-size}em;
 }
+
 
 .ipad-mini {
-  padding-top: 2em;
-  height: 10em;
-  overflow: hidden;
+  @include padding-and-height($ipad-mini-icon-font-size, 8.888888889, 2);
+  iframe {
+    @include iframe-positioning($ipad-mini-icon-font-size, 8.888888889, 19.512195122);
+    @include area-and-transforms(
+    $ipad-mini-width,
+    $ipad-mini-original-width,
+    $ipad-mini-original-height);
+  }
+}
+
+.icon-ipad-mini {
+  font-size: #{$ipad-mini-icon-font-size}em;
 }
 
 
-.ipad-mini iframe {
-  position: relative;
-/*
-  with font-size: 20em;
-  width: 7em;
-  height: 9em;
-  aspect ratio: 0.777777778
-*/
-
-  width: 48em;
-  height: 64em;
-  /* actual / projected = 7 / 48 =  */
-  -webkit-transform: scale(0.145833333);
-  -o-transform: scale(0.145833333);
-  -ms-transform: scale(0.145833333);
-  -moz-transform: scale(0.145833333);
-  transform: scale(0.145833333);
-
-  /* now position it */
-  top: -11.3em;
-  left: 0.7em;
+.computer {
+  @include padding-and-height($computer-icon-font-size, 3.125, 1.923076923);
+  iframe {
+    @include iframe-positioning($computer-icon-font-size, 15.625, 16.666666667);
+    @include area-and-transforms(
+    $computer-width,
+    $computer-original-width,
+    $computer-original-height);
+  }
 }
+
+.icon-computer {
+  font-size: #{$computer-icon-font-size}em;
+}
+
+
+.blackberry {
+  @include padding-and-height($blackberry-icon-font-size, 2.222222222, 2);
+  iframe {
+    @include iframe-positioning($blackberry-icon-font-size, 10, 16.666666667);
+    @include area-and-transforms(
+    $blackberry-width,
+    $blackberry-original-width,
+    $blackberry-original-height);
+  }
+}
+
+.icon-blackberry {
+  font-size: #{$blackberry-icon-font-size}em;
+}
+
+
+.laptop {
+  @include padding-and-height($laptop-icon-font-size, 0, 1);
+  iframe {
+    @include iframe-positioning($laptop-icon-font-size, 12.121212121, 4.597701149);
+    @include area-and-transforms(
+    $laptop-width,
+    $laptop-original-width,
+    $laptop-original-height);
+  }
+}
+
+.icon-laptop {
+  font-size: #{$laptop-icon-font-size}em;
+}
+
 
 
 

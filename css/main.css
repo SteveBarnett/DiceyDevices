@@ -105,80 +105,118 @@ iframe {
   transform-origin: top left; }
 
 .icon {
-  line-height: 0;
-  font-size: 40em; }
+  line-height: 0; }
 
 .device {
   float: left;
-  width: 30em;
-  position: relative; }
+  clear: both;
+  width: 40em;
+  position: relative;
+  overflow: hidden; }
+  .device iframe {
+    position: absolute; }
 
 .slideshow {
-  padding-top: 5%;
-  height: 35em;
-  overflow: hidden; }
+  padding-top: 4.5em;
+  height: 20em; }
+  .slideshow iframe {
+    top: 5em;
+    left: 2.8em;
+    width: 100em;
+    height: 60.0em;
+    -webkit-transform: scale(0.17);
+    -o-transform: scale(0.17);
+    -ms-transform: scale(0.17);
+    -moz-transform: scale(0.17);
+    transform: scale(0.17); }
 
-.slideshow iframe {
-  position: absolute;
-  top: 7%;
-  left: 2.8em;
-  width: 100em;
-  height: 60.0em;
-  /* actual / projected = 31 / 100 = 0.31 */
-  -webkit-transform: scale(0.17);
-  -o-transform: scale(0.17);
-  -ms-transform: scale(0.17);
-  -moz-transform: scale(0.17);
-  transform: scale(0.17); }
+.icon-slideshow {
+  font-size: 40em; }
 
 .cell {
-  height: 35em;
-  overflow: hidden; }
+  padding-top: 4.5em;
+  height: 20em; }
+  .cell iframe {
+    top: 6.5em;
+    left: 16.4em;
+    width: 15em;
+    height: 15em;
+    -webkit-transform: scale(0.53333);
+    -o-transform: scale(0.53333);
+    -ms-transform: scale(0.53333);
+    -moz-transform: scale(0.53333);
+    transform: scale(0.53333); }
 
-.cell iframe {
-  position: relative;
-  /*
-    with font-size: 10em;
-    width: 2em;
-    height: 2em;
-    aspect ratio: 1
-  */
-  width: 15em;
-  height: 15em;
-  /* actual / projected = 2 / 15 = 0.133333333 */
-  -webkit-transform: scale(0.13333);
-  -o-transform: scale(0.13333);
-  -ms-transform: scale(0.13333);
-  -moz-transform: scale(0.13333);
-  transform: scale(0.13333);
-  /* now position it */
-  top: 10.7em;
-  left: -2.8em; }
+.icon-cell {
+  font-size: 40em; }
 
 .ipad-mini {
-  padding-top: 2em;
-  height: 10em;
-  overflow: hidden; }
+  padding-top: 4.5em;
+  height: 20em; }
+  .ipad-mini iframe {
+    top: 4.5em;
+    left: 2.05em;
+    width: 48em;
+    height: 58.04651em;
+    -webkit-transform: scale(0.26875);
+    -o-transform: scale(0.26875);
+    -ms-transform: scale(0.26875);
+    -moz-transform: scale(0.26875);
+    transform: scale(0.26875); }
 
-.ipad-mini iframe {
-  position: relative;
-  /*
-    with font-size: 20em;
-    width: 7em;
-    height: 9em;
-    aspect ratio: 0.777777778
-  */
-  width: 48em;
-  height: 64em;
-  /* actual / projected = 7 / 48 =  */
-  -webkit-transform: scale(0.14583);
-  -o-transform: scale(0.14583);
-  -ms-transform: scale(0.14583);
-  -moz-transform: scale(0.14583);
-  transform: scale(0.14583);
-  /* now position it */
-  top: -11.3em;
-  left: 0.7em; }
+.icon-ipad-mini {
+  font-size: 40em; }
+
+.computer {
+  padding-top: 8em;
+  height: 13.0em; }
+  .computer iframe {
+    top: 1.6em;
+    left: 1.5em;
+    width: 46em;
+    height: 34.81081em;
+    -webkit-transform: scale(0.32174);
+    -o-transform: scale(0.32174);
+    -ms-transform: scale(0.32174);
+    -moz-transform: scale(0.32174);
+    transform: scale(0.32174); }
+
+.icon-computer {
+  font-size: 25em; }
+
+.blackberry {
+  padding-top: 9.0em;
+  height: 10em; }
+  .blackberry iframe {
+    top: 2em;
+    left: 1.2em;
+    width: 19em;
+    height: 11.15873em;
+    -webkit-transform: scale(0.66316);
+    -o-transform: scale(0.66316);
+    -ms-transform: scale(0.66316);
+    -moz-transform: scale(0.66316);
+    transform: scale(0.66316); }
+
+.icon-blackberry {
+  font-size: 20em; }
+
+.laptop {
+  padding-top: Infinityem;
+  height: 40em; }
+  .laptop iframe {
+    top: 3.3em;
+    left: 8.7em;
+    width: 103em;
+    height: 65.08723em;
+    -webkit-transform: scale(0.18252);
+    -o-transform: scale(0.18252);
+    -ms-transform: scale(0.18252);
+    -moz-transform: scale(0.18252);
+    transform: scale(0.18252); }
+
+.icon-laptop {
+  font-size: 40em; }
 
 /*
  * Shifticons (shifticons.com)

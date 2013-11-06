@@ -1,0 +1,24 @@
+@mixin padding-and-height($icon-font-size, $padding-top, $height) {
+  padding-top: #{$icon-font-size/$padding-top}em;
+  height: #{$icon-font-size/$height}em;
+}
+
+@mixin iframe-positioning($icon-font-size, $top, $left) {
+  top: #{$icon-font-size/$top}em;
+  left: #{$icon-font-size/$left}em;
+}
+
+@mixin area-and-transforms(
+  $width,
+  $original-width,
+  $original-height)
+{
+  width: #{$width}em;
+  height: #{$width / ( $original-width / $original-height )}em;
+  $scale: $original-width * $icon-font-size / $width;
+  -webkit-transform: scale($scale);
+  -o-transform: scale($scale);
+  -ms-transform: scale($scale);
+  -moz-transform: scale($scale);
+  transform: scale($scale);
+}
