@@ -91,4 +91,29 @@ $(function() {
     $icons.each(function(key, value){
         $(this).addClass(colours[key]);
     });
+
+    // url-ing
+
+    function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+            vars[key] = value;
+        });
+        return vars;
+    }
+
+    var first = getUrlVars()["url"];
+    first = decodeURIComponent(first);
+    first = first.replace(/\#$/, '');
+
+    if(first === "undefined") {
+    }
+    else {
+      if (first.indexOf("http://") === -1) {
+          first = "http://" + first;
+      }
+      $("iframe").attr('src',(first));
+    }
+
+
 });
