@@ -34,3 +34,11 @@
   -moz-transform: scale($scaleX, $scaleY);
   transform: scale($scaleX, $scaleY);
 }
+
+@mixin rotateY($perspective, $rotation) {
+  -webkit-transform: perspective($perspective) rotateY($rotation);
+  -o-transform: perspective($perspective) rotateY($rotation);
+  -ms-transform: perspective($perspective) rotateY($rotation);
+  -moz-transform: perspective($perspective) rotateY($rotation);
+  transform: perspective($perspective) rotateY($rotation);
+}

@@ -301,6 +301,39 @@ iframe {
   @include transform-scaleXY(1, $stretch-a-lot);
 }
 
+/* SFX */
+
+// night mode. apply to <body>
+
+.night-mode {
+  background: #000;
+  .icon {
+    text-shadow: 0 0 40px #A2F4EA;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+  }
+
+}
+
+// twister
+
+.twist-right {
+  @include rotateY(42em, 20deg);
+}
+
+.twist-right-lots {
+  @include rotateY(42em, 42deg);
+}
+
+.twist-left {
+  @include rotateY(42em, -20deg);
+}
+
+.twist-left-lots {
+  @include rotateY(42em, -42deg);
+}
+
 /*
  * Shifticons (shifticons.com)
  * Order #1812
