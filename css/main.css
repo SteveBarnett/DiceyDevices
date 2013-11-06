@@ -108,10 +108,7 @@ iframe {
   line-height: 0; }
 
 .device {
-  float: left;
-  clear: both;
-  width: 40em;
-  position: relative;
+  position: absolute;
   overflow: hidden; }
   .device iframe {
     position: absolute; }
@@ -203,7 +200,7 @@ iframe {
 
 .laptop {
   padding-top: Infinityem;
-  height: 40em; }
+  height: Infinityem; }
   .laptop iframe {
     top: 3.3em;
     left: 8.7em;
@@ -217,6 +214,21 @@ iframe {
 
 .icon-laptop {
   font-size: 40em; }
+
+.top-row {
+  top: 0; }
+
+.bottom-row {
+  bottom: 5%; }
+
+.first-column {
+  left: 5%; }
+
+.second-column {
+  left: 35%; }
+
+.third-column {
+  right: 0; }
 
 /*
  * Shifticons (shifticons.com)

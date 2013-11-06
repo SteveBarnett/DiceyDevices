@@ -123,10 +123,7 @@ iframe {
 }
 
 .device {
-  float: left;
-  clear: both;
-  width: #{$device-width}em;
-  position: relative;
+  position: absolute;
   overflow: hidden;
   iframe {
     position: absolute;
@@ -214,7 +211,7 @@ iframe {
 
 
 .laptop {
-  @include padding-and-height($laptop-icon-font-size, 0, 1);
+  @include padding-and-height($laptop-icon-font-size, 0, 0);
   iframe {
     @include iframe-positioning($laptop-icon-font-size, 12.121212121, 4.597701149);
     @include area-and-transforms(
@@ -228,7 +225,25 @@ iframe {
   font-size: #{$laptop-icon-font-size}em;
 }
 
+.top-row {
+  top: 0;
+}
 
+.bottom-row {
+  bottom: 5%;
+}
+
+.first-column {
+  left: 5%;
+}
+
+.second-column {
+  left: 35%
+}
+
+.third-column {
+  right: 0;
+}
 
 
 
