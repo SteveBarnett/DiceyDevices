@@ -19,10 +19,10 @@ $(function() {
     ];
 
     var twisters = [
-        'right',
-        'right-lots',
-        'left',
-        'left-lots',
+        'twist-right',
+        'twist-right-lots',
+        'twist-left',
+        'twist-left-lots',
         '',
         ''
     ];
