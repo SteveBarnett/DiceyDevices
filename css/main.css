@@ -89,6 +89,9 @@ $blue: #126b8e;
 $dark-blue: #04161d;
 
 */
+/*
+Future Friendly
+*/
 body {
   /*text-align: center;*/
   padding: 2em; }
@@ -229,6 +232,27 @@ iframe {
 
 .third-column {
   right: 0; }
+
+.icon-outlined {
+  text-shadow: 1px 0 #000, 0 1px #000, -1px 0 #000, 0 -1px #000; }
+
+.icon-red {
+  color: #a42b22; }
+
+.icon-blue {
+  color: #0699cc; }
+
+.icon-grey {
+  color: #c1c1c1; }
+
+.icon-cream {
+  color: #f2f2f2; }
+
+.icon-green {
+  color: #007c59; }
+
+.icon-silver {
+  color: silver; }
 
 /*
  * Shifticons (shifticons.com)

@@ -245,6 +245,38 @@ iframe {
   right: 0;
 }
 
+.icon-outlined {
+  text-shadow:
+    1px 0 #000,
+    0 1px #000,
+    -1px 0 #000,
+    0 -1px #000;
+}
+
+.icon-red {
+  color: $ff-red;
+}
+
+.icon-blue {
+  color: $ff-blue;
+}
+
+.icon-grey {
+  color: $ff-grey;
+}
+
+.icon-cream {
+  color: $ff-cream;
+}
+
+.icon-green {
+  color: $ff-green;
+}
+
+.icon-silver {
+  color: silver;
+}
+
 
 
 /*
