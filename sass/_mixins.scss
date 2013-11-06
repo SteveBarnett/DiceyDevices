@@ -16,9 +16,21 @@
   width: #{$width}em;
   height: #{$width / ( $original-width / $original-height )}em;
   $scale: $original-width * $icon-font-size / $width;
+  @include transform-scale($scale);
+}
+
+@mixin transform-scale($scale) {
   -webkit-transform: scale($scale);
   -o-transform: scale($scale);
   -ms-transform: scale($scale);
   -moz-transform: scale($scale);
   transform: scale($scale);
+}
+
+@mixin transform-scaleXY($scaleX, $scaleY) {
+  -webkit-transform: scale($scaleX, $scaleY);
+  -o-transform: scale($scaleX, $scaleY);
+  -ms-transform: scale($scaleX, $scaleY);
+  -moz-transform: scale($scaleX, $scaleY);
+  transform: scale($scaleX, $scaleY);
 }

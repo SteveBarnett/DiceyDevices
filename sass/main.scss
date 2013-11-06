@@ -130,6 +130,8 @@ iframe {
   }
 }
 
+/* icon specific stuff */
+
 .slideshow {
   @include padding-and-height($slideshow-icon-font-size, 8.888888889, 2);
   iframe {
@@ -225,6 +227,8 @@ iframe {
   font-size: #{$laptop-icon-font-size}em;
 }
 
+/* 3 x 2 grid */
+
 .top-row {
   top: 0;
 }
@@ -242,8 +246,10 @@ iframe {
 }
 
 .third-column {
-  right: 0;
+  right: 1%;
 }
+
+/* icon decoration */
 
 .icon-outlined {
   text-shadow:
@@ -277,7 +283,23 @@ iframe {
   color: silver;
 }
 
+/* size stretching */
 
+.wider {
+  @include transform-scaleXY($stretch-a-bit, 1);
+}
+
+.much-wider {
+  @include transform-scaleXY($stretch-a-lot, 1);
+}
+
+.taller {
+  @include transform-scaleXY(1, $stretch-a-bit);
+}
+
+.much-taller {
+  @include transform-scaleXY(1, $stretch-a-lot);
+}
 
 /*
  * Shifticons (shifticons.com)

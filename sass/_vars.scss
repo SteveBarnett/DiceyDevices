@@ -34,7 +34,7 @@ $laptop-icon-font-size: 40;
 
 $slideshow-original-width: 0.425; // * $slideshow-icon-font-size;
 $slideshow-original-height: 0.255; // * $slideshow-icon-font-size;
-$slideshow-width: 100;
+$slideshow-width: 150;
 
 $cell-original-width: 0.2; // * $icon-font-size;
 $cell-original-height: 0.2; // * $icon-font-size;
@@ -55,3 +55,6 @@ $blackberry-width: 19;
 $laptop-original-width: 0.47; // * $icon-font-size;
 $laptop-original-height: 0.297; // * $icon-font-size;
 $laptop-width: 103;
+
+$stretch-a-bit: 1.1;
+$stretch-a-lot: 1.3;
