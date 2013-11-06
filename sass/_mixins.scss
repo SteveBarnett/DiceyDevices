@@ -3,16 +3,16 @@
   height: #{$icon-font-size/$height}em;
 }
 
-@mixin iframe-positioning($icon-font-size, $top, $left) {
-  top: #{$icon-font-size/$top}em;
-  left: #{$icon-font-size/$left}em;
-}
-
-@mixin area-and-transforms(
+@mixin device-screen-positioning(
+  $icon-font-size,
+  $top,
+  $left,
   $width,
   $original-width,
-  $original-height)
-{
+  $original-height
+  ) {
+  top: #{$icon-font-size/$top}em;
+  left: #{$icon-font-size/$left}em;
   width: #{$width}em;
   height: #{$width / ( $original-width / $original-height )}em;
   $scale: $original-width * $icon-font-size / $width;
@@ -41,4 +41,28 @@
   -ms-transform: perspective($perspective) rotateY($rotation);
   -moz-transform: perspective($perspective) rotateY($rotation);
   transform: perspective($perspective) rotateY($rotation);
+}
+
+@mixin saturate($saturate) {
+  -webkit-filter: saturate($saturate);
+  -o-filter: saturate($saturate);
+  -ms-filter: saturate($saturate);
+  -moz-filter: saturate($saturate);
+  filter: saturate($saturate);
+}
+
+@mixin blur($blur) {
+  -webkit-filter: blur($blur);
+  -o-filter: blur($blur);
+  -ms-filter: blur($blur);
+  -moz-filter: blur($blur);
+  filter: blur($blur);
+}
+
+@mixin brightness($brightness) {
+  -webkit-filter: brightness($brightness);
+  -o-filter: brightness($brightness);
+  -ms-filter: brightness($brightness);
+  -moz-filter: brightness($brightness);
+  filter: brightness($brightness);
 }
