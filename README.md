@@ -17,3 +17,7 @@ It takes six devices and throws randomly on to a 3 x 2 grid, then applies a coup
 * by mimicking by bad or old screens by fading, desaturating, blurring, darkening, or showing a crack on the screen.
 
 There's also a super secret "night-mode".
+
+The site being previewed can be fed in using a query string:
+
+    ?url=example.com
